@@ -1,0 +1,7 @@
+node_modules
+truffle-config.js
+package-lock.json
+
+#Hardhat files
+cache
+artifacts
