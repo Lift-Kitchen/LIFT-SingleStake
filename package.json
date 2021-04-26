@@ -1,8 +1,8 @@
 {
-  "name": "liftdaoincubator",
-  "version": "0.1.0",
+  "name": "liftsinglestakes",
+  "version": "0.1.1",
   "description": "A DAO/StableCoin Incubator Model",
-  "repository": "https://github.com/cryptogambler01/LiftDAO",
+  "repository": "https://github.com/Lift-Kitchen/LIFT-SingleStake",
   "license": "MIT",
   "scripts": {
     "dev": "hardhat node",
@@ -27,7 +27,6 @@
     "@sushiswap/sdk": "*",
     "@truffle/artifactor": "^4.0.99",
     "@truffle/contract": "^4.3.11",
-    "@truffle/hdwallet-provider": "^1.2.1",
     "@types/chai": "^4.2.15",
     "@types/mocha": "^8.2.1",
     "@types/node": "^14.14.33",
@@ -46,6 +45,7 @@
     "web3": "^1.2.9"
   },
   "dependencies": {
+    "@truffle/hdwallet-provider": "^1.2.2",
     "bfg": "^0.3.0",
     "git-bfg": "^0.1.15",
     "is-core-module": "^2.2.0"
