@@ -12,6 +12,8 @@ const BASv2Pool = artifacts.require('shortStakeBASv2Pool')
 const iFARMPool = artifacts.require('shortStakeiFARMPool')
 const KBTCPool = artifacts.require('shortStakeKBTCPool')
 const PICKLEPool = artifacts.require('shortStakePICKLEPool')
+const Oracle = artifacts.require('Oracle');
+const HedgeFund = artifacts.require('HedgeFund')
 
 
 // ============ Main Migration ============
@@ -25,6 +27,22 @@ module.exports = migration
 // ============ Deploy Functions ============
 
 async function deployPool(deployer, network, accounts) {
+  const uniswap = "0xC0AEe478e3658e2610c5F7A4A2E1777cE9e4f2Ac";
+  const wbtc = "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599"
+  const peg = "0xafcE9B78D409bF74980CACF610AFB851BF02F257";
+  const share = "0xf9209d900f7ad1DC45376a2caA61c78f6dEA53B6";
+  const control = "0xA31fDbaA772745D11843EFEDA9922dcbf5460672";
+  const hedge = "0x99A68d06b9a23eFE9885Eb723D63457aAB1633de";
+  const ideafund = "0x918b4FDbC30B628564E07fd2120009b0078F4343";
+  const linkOracle = "0xF4030086522a5bEEa4988F8cA5B36dbC97BeE88c"
+
+  // Deploy HedgeFund
+  const hedgefund = await deployer.deploy(HedgeFund, wbtc, peg, share, control, hedge, POOL_START_DATE);
+
+  const oracle = await deployer.deploy(Oracle, uniswap, wbtc, peg, share, control, hedge, HedgeFund.address, ideafund, linkOracle);
+    
+  //await hedgefund.updateOracle(Oracle.address);
+
   const alUSD = "0xbc6da0fe9ad5f3b0d58160288917aa56653660e9";
   await deployer.deploy(alUSDPool, LIFT, alUSD, boardroom, POOL_START_DATE);
 

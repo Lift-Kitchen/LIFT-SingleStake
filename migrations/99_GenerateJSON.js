@@ -11,7 +11,9 @@ const exportedContracts = [
 'shortStakeBASv2Pool',
 'shortStakeiFARMPool',
 'shortStakeKBTCPool',
-'shortStakePICKLEPool'
+'shortStakePICKLEPool',
+'Oracle',
+'HedgeFund'
 ];
 
 module.exports = async (deployer, network, accounts) => {
