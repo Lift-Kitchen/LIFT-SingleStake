@@ -23723,14 +23723,123 @@
   },
   "networks": {
     "4": {
-      "events": {},
+      "events": {
+        "0xbdda39567f26a8eed2e5c9af46bdbc6431ccce57edf2475092ea1b82b29cd150": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "sender",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "DepositIntoHedgeFund",
+          "type": "event"
+        },
+        "0x0caca70b66aed56b0630989a049110023c5a3f37e0ea4b6ce96fc747663f3ebc": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "target",
+              "type": "address"
+            }
+          ],
+          "name": "Migration",
+          "type": "event"
+        },
+        "0x74da04524d50c64947f5dd5381ef1a4dca5cba8ed1d816243f9e48aa0b5617ed": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "previousOperator",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "newOperator",
+              "type": "address"
+            }
+          ],
+          "name": "OperatorTransferred",
+          "type": "event"
+        },
+        "0xb0aa00bd220ff7460fcf09f104b655e1b09099dc79fa5a75441708d5b0bf4845": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "sender",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "OperatorWithdrawForInvestment",
+          "type": "event"
+        },
+        "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "previousOwner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "newOwner",
+              "type": "address"
+            }
+          ],
+          "name": "OwnershipTransferred",
+          "type": "event"
+        },
+        "0x67d13a19296d6da21dd07fd31d8733841df2a25052bef52e46a4dbb4908c40d3": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "sender",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "WithDrawFromHedgeFund",
+          "type": "event"
+        }
+      },
       "links": {},
-      "address": "0xf96aA18B81A07277ACFca4CCAAC131Ab7FAFaA30",
-      "transactionHash": "0xf22fc9556a54567b90b4b508f70c4c8567c7ba6cf4253897a63431df952dd3bb"
+      "address": "0x6ED0Fc81d7c2188d3698A96e10CAdf8FA91642E5",
+      "transactionHash": "0xeed692e7750b7ee3881a5d695ae6ce03abf5a250abd8b1feb83f318010da8534"
     }
   },
   "schemaVersion": "3.4.0",
-  "updatedAt": "2021-04-30T01:25:19.358Z",
+  "updatedAt": "2021-04-30T01:40:19.858Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",

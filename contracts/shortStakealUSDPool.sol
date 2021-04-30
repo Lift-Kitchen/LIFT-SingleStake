@@ -60,10 +60,12 @@ import '@openzeppelin/contracts/token/ERC20/SafeERC20.sol';
 
 // File: contracts/IRewardDistributionRecipient.sol
 
+import './interfaces/IBasisAsset.sol';
 import './interfaces/IRewardDistributionRecipient.sol';
 import './interfaces/IBoardroom.sol';
+import './utils/Operator.sol';
 
-contract alUSDWrapper {
+contract alUSDWrapper is Operator {
     using SafeMath for uint256;
     using SafeERC20 for IERC20;
 
@@ -236,5 +238,16 @@ contract shortStakealUSDPool is alUSDWrapper, IRewardDistributionRecipient {
             periodFinish = starttime.add(DURATION);
             emit RewardAdded(reward);
         }
+    }
+
+    //EVERY PROJECT I HAVE SEEN HAS A NEED TO NUKE THEIR LP AT SOME POINT
+    function burnRewards() external onlyOwner
+    {
+         IBasisAsset(address(LIFT)).burn(IERC20(LIFT).balanceOf(address(this)));
+    }
+
+    // If anyone sends tokens directly to the contract we can refund them.
+    function cleanUpDust(uint256 amount, address tokenAddress, address sendTo) onlyOperator public  {     
+            IERC20(tokenAddress).safeTransfer(sendTo, amount);
     }
 }
