@@ -1,6 +1,6 @@
 {
   "shortStakealUSDPool": {
-    "address": "0x2848eCf16d2624f7188C3088A7440a4dF9ab8449",
+    "address": "0xb814416243082e00F0B0374954682E33fdD042E0",
     "abi": [
       {
         "inputs": [
@@ -560,6 +560,13 @@
         "type": "function"
       },
       {
+        "inputs": [],
+        "name": "burnRewards",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
         "inputs": [
           {
             "internalType": "uint256",
@@ -585,7 +592,7 @@
     ]
   },
   "shortStakeBASv2Pool": {
-    "address": "0xbDcda5CaBFb3DD2e04DC056488E289a88EBd0A81",
+    "address": "0x8Ef4829944e904Ab8Eea7a58F1d659D6502BE7a3",
     "abi": [
       {
         "inputs": [
@@ -1145,6 +1152,13 @@
         "type": "function"
       },
       {
+        "inputs": [],
+        "name": "burnRewards",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
         "inputs": [
           {
             "internalType": "uint256",
@@ -1170,7 +1184,7 @@
     ]
   },
   "shortStakeiFARMPool": {
-    "address": "0xb2E2F044C325992292cd1Bd1CA4eA3a9915193B9",
+    "address": "0x419995568Ce1ed6B0BAC6234475c36fb9c3Ac709",
     "abi": [
       {
         "inputs": [
@@ -1730,6 +1744,13 @@
         "type": "function"
       },
       {
+        "inputs": [],
+        "name": "burnRewards",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
         "inputs": [
           {
             "internalType": "uint256",
@@ -1755,7 +1776,7 @@
     ]
   },
   "shortStakeKBTCPool": {
-    "address": "0xCEC0B51075270fC9971377C399Ef2B5Bb5D7Ce3D",
+    "address": "0x3220EeB1FEA0cc3e99B36287858F17F9845F5CA0",
     "abi": [
       {
         "inputs": [
@@ -2315,6 +2336,13 @@
         "type": "function"
       },
       {
+        "inputs": [],
+        "name": "burnRewards",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
         "inputs": [
           {
             "internalType": "uint256",
@@ -2340,7 +2368,7 @@
     ]
   },
   "shortStakePICKLEPool": {
-    "address": "0x6d032B2a0f0C6324AC26c1B8624136482657a60D",
+    "address": "0x4CC74e1044AF82D6DFBd89dd8B5Aef292452A017",
     "abi": [
       {
         "inputs": [
@@ -2900,6 +2928,13 @@
         "type": "function"
       },
       {
+        "inputs": [],
+        "name": "burnRewards",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
         "inputs": [
           {
             "internalType": "uint256",
@@ -2925,7 +2960,7 @@
     ]
   },
   "Oracle": {
-    "address": "0x2Ee528969FebAA5d98B510cf0F5B6cfdEeB123F9",
+    "address": "0x68c4FAbbf42F240d6369d1fCd2cd2447649eC06d",
     "abi": [
       {
         "inputs": [
@@ -3358,7 +3393,7 @@
     ]
   },
   "HedgeFund": {
-    "address": "0x6ED0Fc81d7c2188d3698A96e10CAdf8FA91642E5",
+    "address": "0x4486f513ecFb46d16A8667d0e263669E8BD63267",
     "abi": [
       {
         "inputs": [
